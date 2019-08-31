@@ -1,0 +1,15 @@
+
+<sly data-sly-use.a="adaptTo.core.components.LoaderComponent">
+    <div class="aem-react-component cta" data-params="${a.allProperties}">
+    </div>
+    <script>
+        (function () {
+            var event = document.createEvent('Event');
+            event.initEvent('loadaemreactcomponent', true, true);
+            document.dispatchEvent(event);
+        }());
+    </script>
+</sly>
+
+<!-- demo purposes only, this should be intergrated in clientlibs or dynamic loading -->
+<script src="/apps/settings/wcm/designs/adapt-to/react-components/js/cta.hash.js"></script>

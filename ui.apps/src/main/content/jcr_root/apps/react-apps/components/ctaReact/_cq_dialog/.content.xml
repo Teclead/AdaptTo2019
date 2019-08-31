@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          jcr:title="Button-React">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tab_0
+        jcr:primaryType="nt:unstructured"
+        jcr:title="My first Tab"
+        sling:resourceType="granite/ui/components/foundation/section">
+    <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+    <items jcr:primaryType="nt:unstructured">
+        <column jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <element_0 jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/textfield"
+        name="./text" fieldLabel="Text field"    />
+<element_1 jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/form/textarea"
+        name="./textArea" fieldLabel="Text Area"    />
+<element_2
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+    name="./dropdown" fieldLabel="Dropdown field"   >
+    <items jcr:primaryType="nt:unstructured">
+        <option_0 jcr:primaryType="nt:unstructured" value="val 0" text="Label 0"/><option_1 jcr:primaryType="nt:unstructured" value="val 1" text="Label 1"/><option_2 jcr:primaryType="nt:unstructured" value="val 2" text="Label 2"/><option_3 jcr:primaryType="nt:unstructured" value="val 3" text="Label 3"/><option_4 jcr:primaryType="nt:unstructured" value="val 4" text="Label 4"/><option_5 jcr:primaryType="nt:unstructured" value="val 5" text="Label 5"/><option_6 jcr:primaryType="nt:unstructured" value="val 6" text="Label 6"/><option_7 jcr:primaryType="nt:unstructured" value="val 7" text="Label 7"/><option_8 jcr:primaryType="nt:unstructured" value="val 8" text="Label 8"/><option_9 jcr:primaryType="nt:unstructured" value="val 9" text="Label 9"/><option_10 jcr:primaryType="nt:unstructured" value="val 10" text="Label 10"/>
+    </items>
+</element_2>
+<element_3 jcr:primaryType="nt:unstructured"
+        name="./path" fieldLabel="Pathfield"   
+        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+<element_4
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+    name="./check"
+    text="Checkbox"   
+    uncheckedValue="false"
+    value="true"/>
+<element_5 jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/fileupload" autoStart="{Boolean}false" class="cq-droptarget" title="Image" fieldLabel="Image" fileNameParameter="./fileName" fileReferenceParameter="./img" mimeTypes="[image]" multiple="{Boolean}false" name="./file" useHTML5="{Boolean}true" uploadUrl="${suffix.path}"/>
+
+            </items>
+        </column>
+    </items>
+</tab_0>
+
+        </items>
+    </content>
+</jcr:root>

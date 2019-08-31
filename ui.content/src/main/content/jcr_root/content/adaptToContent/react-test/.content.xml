@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2019-08-29T07:14:29.301+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/adaptToConf/settings/wcm/templates/content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="react-test"
+        sling:resourceType="react-apps/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <ctareact
+                    jcr:created="{Date}2019-08-28T21:23:01.928+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-08-28T22:49:56.556+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="react-apps/components/ctaReact"
+                    check="true"
+                    dropdown="val2"
+                    img="/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/surfer-wave-02.jpg"
+                    path="/content/adaptToContent/react-test"
+                    text="This is a text field content"
+                    textArea="This is Textarea Content"/>
+                <textimage
+                    jcr:created="{Date}2019-08-29T07:08:27.368+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-08-29T07:08:54.251+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/textimage"
+                    text="&lt;p style=&quot;text-align: center;&quot;>&lt;b>Plain AEM Components work as well!&lt;/b>&lt;/p>&#xa;"
+                    textIsRich="true"/>
+                <ctareact_copy
+                    jcr:created="{Date}2019-08-28T21:23:01.928+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-08-29T07:14:29.298+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="react-apps/components/ctaReact"
+                    check="true"
+                    dropdown="val1"
+                    img="/content/dam/we-retail/en/experiences/fly-fishing-the-amazon/fly-fishing-the-amazon-1.jpg"
+                    path="/content/adaptToContent/react-test"
+                    text="Second Text field"
+                    textArea="My second component Text Area"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>
