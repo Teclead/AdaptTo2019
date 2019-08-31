@@ -1,26 +1,4 @@
-# Used Archetype
-mvn archetype:generate \
- -DarchetypeGroupId=com.adobe.granite.archetypes \
- -DarchetypeArtifactId=aem-project-archetype \
- -DarchetypeVersion=20 \
- -DoptionIncludeExamples=n \
- -DoptionAemVersion=6.4.3 \
- -DgroupId=adaptTo \
- -DartifactId=adaptTo \		
- -Dversion=1.0.0 \		
- -Dpackage=adaptTo \		
- -DappsFolderName=react-apps \
- -DartifactName=adapt-to-react \
- -DcomponentGroupName=adaptTo \
- -DcontentFolderName=adaptToContent \
- -DconfFolderName=adaptToConf \	
- -DcssId=adapt-to-react	\
- -DpackageGroup=adaptTo \
- -DsiteName=adaptTo
-
-# Sample AEM project template
-
-This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+# AdaptTo() Conference 2019 - Demo Projekt for React Integration and Tecleads Dialog Generator tool
 
 ## Modules
 
@@ -33,6 +11,17 @@ The main parts of the template are:
 * ui.launcher: contains glue code that deploys the ui.tests bundle (and dependent bundles) to the server and triggers the remote JUnit execution
 
 ## How to build
+
+To build React and Dialog Generator Apps:
+
+    cd react-components
+    npm run build
+
+Developing React (good to use with aemsync)
+
+    cd react-components
+    yarn build:react --watch
+
 
 To build all the modules run in the project root directory the following command with Maven 3:
 
