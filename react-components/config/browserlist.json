@@ -1,0 +1,9 @@
+[
+  "last 2 versions",
+  "ie >= 10",
+  "Firefox ESR",
+  "iOS >= 9",
+  "Android >= 4",
+  "Safari >= 9",
+  "Samsung >= 3.2"
+]
